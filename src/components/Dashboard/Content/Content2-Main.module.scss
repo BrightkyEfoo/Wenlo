@@ -1,0 +1,51 @@
+.container {
+  background: #f2f5f9;
+  padding: 20px 28px;
+  max-height: calc(100vh - 96px);
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 18px;
+  overflow-y: scroll;
+  h2 {
+    margin: 0;
+    grid-column: span 12;
+    color: #132239;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%; /* 24px */
+    letter-spacing: -0.41px;
+  }
+}
+
+.container > button:nth-child(2) {
+  border: none;
+  padding: 10px 16px;
+  grid-column: -3/-2;
+  border-radius: 5px;
+  border: 1px solid #ebebeb;
+  background: #fff;
+  color: #26283f;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 12px */
+  letter-spacing: -0.41px;
+}
+
+.container > button:nth-child(3) {
+  border: none;
+  padding: 10px 16px;
+  grid-column: -2/-1;
+  color: #fff;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 12px */
+  letter-spacing: -0.41px;
+  border-radius: 5px;
+  background: #3c51a2;
+}

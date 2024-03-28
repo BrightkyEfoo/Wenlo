@@ -1,0 +1,36 @@
+.container-switched {
+  background-color: #3a4ca1;
+  //   border: 1px solid #3a4ca1;
+  div {
+    background: white;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border-radius: 40px;
+  width: 45px;
+  padding: 2px;
+  height: 24px;
+}
+
+.container {
+  background-color: white;
+  border: 1px solid #bdbdbd;
+  div {
+    background: #3a4ca1;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 40px;
+  width: 45px;
+  padding: 2px;
+  height: 24px;
+}
+

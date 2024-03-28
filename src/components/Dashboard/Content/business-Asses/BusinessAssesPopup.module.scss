@@ -1,0 +1,141 @@
+.displayElement,
+.renderElement {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 12px;
+  height: 35px;
+}
+
+.renderElement {
+  border-radius: 8px;
+  background: #f2f5f9;
+  width: 100%;
+  padding: 5px 11px;
+}
+
+.popup {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  background: #0000002a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.container {
+  border-radius: 10px;
+  border: 1px solid #ebebeb;
+  background: #fff;
+  width: 450px;
+  overflow: hidden;
+  & > * {
+    padding: 0 20px;
+  }
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  border-bottom: 1px solid #ebebeb;
+  p {
+    color: #26283f;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%; /* 18px */
+    letter-spacing: -0.41px;
+  }
+  button {
+    border: none;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.body {
+  padding-top: 18px;
+  padding-bottom: 18px;
+  display: grid;
+  gap: 8px;
+  input {
+    height: 35px;
+    padding-left: 10px;
+    border-radius: 8px;
+    border: 1px solid #ebebeb;
+    background: #fff;
+    outline: none;
+  }
+  label {
+    color: #939393;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 19.6px */
+    letter-spacing: -0.41px;
+  }
+  p + span {
+    color: #939393;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 16.8px */
+    letter-spacing: -0.24px;
+  }
+  p {
+    margin: 0;
+    margin-top: 18px;
+    color: #26283f;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%; /* 16px */
+    letter-spacing: -0.41px;
+  }
+}
+
+.footer {
+  border-top: 1px solid #ebebeb;
+  background: #f5f5f5;
+  display: grid;
+  //   g
+  grid-template-columns: auto auto;
+  justify-items: end;
+  justify-content: flex-end;
+  gap: 12px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  button {
+    height: 35px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #26283f;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    border-radius: 8px;
+    border: 1px solid #ebebeb;
+    background: #fff;
+    line-height: 100%; /* 14px */
+  }
+
+  button:last-of-type {
+    background: #3949a1;
+    border-color: #3949a1;
+    color: #fff;
+  }
+}

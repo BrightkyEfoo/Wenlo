@@ -1,0 +1,159 @@
+.AmountRadiosContainer {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.AmountRadioSelected {
+  border-radius: 8px;
+  border: 1px solid #3949a1;
+  background: #fff;
+  color: #3949a1;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 14px */
+  letter-spacing: -0.41px;
+}
+
+.AmountRadio {
+  border-radius: 8px;
+  border: 1px solid #ebebeb;
+  background: #fff;
+  padding: 7.5px 20px;
+  color: #26283f;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 14px */
+  letter-spacing: -0.41px;
+  cursor: pointer;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(28, 28, 28, 0.3);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 540px;
+  border-radius: 8px;
+  background: #fff;
+  border-radius: 8px;
+  overflow: visible;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+
+  span {
+    color: #828282;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%; /* 12px */
+  }
+  p {
+    color: #26283f;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%; /* 12px */
+    margin: 0;
+  }
+}
+
+.header {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  gap: 20px;
+  position: relative;
+  padding: 20px 0;
+
+  & > div:first-child {
+    border-radius: 80px;
+    border: 1px solid #f2f2f2;
+    background: #fafafa;
+    padding: 15px;
+    aspect-ratio: 1/1;
+    display: grid;
+    place-items: center;
+  }
+
+  p {
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  button {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    aspect-ratio: 1/1;
+    display: grid;
+    place-items: center;
+    border: none;
+    background-color: transparent;
+  }
+}
+
+.body > div:first-child {
+  margin: 10px 12px 20px;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: end;
+  gap: 12px;
+  & > span {
+    margin-bottom: 40%;
+  }
+}
+
+.body {
+  display: grid;
+  gap: 8px;
+  & > input {
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid #ebebeb;
+    background: #fff;
+    outline: none;
+    padding-left: 12px;
+  }
+  & > * {
+    margin: 0 12px;
+  }
+  overflow-y: visible;
+}
+
+.body > div:nth-child(2) {
+}
+
+.accountSelectContainer {
+  display: grid;
+  gap: 8px;
+}
+
+.footer {
+  border-top: 1px solid #ebebeb;
+  background: #f5f5f5;
+  padding: 16px 12px;
+  margin-top: 20px;
+  border-radius: 0 0 8px 8px;
+  display: grid;
+  justify-items: end;
+  button {
+    color: white;
+    border-radius: 8px;
+    background: #3949a1;
+    padding: 8px 20px;
+    border: none;
+  }
+}

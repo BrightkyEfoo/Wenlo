@@ -1,0 +1,92 @@
+.container {
+    width: 100%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+  }
+  .subContainer {
+    margin-top: 1cqmax;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  .card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+  }
+
+  .title {
+    margin: 0;
+    padding-bottom: 16px;
+    display: flex;
+    border-bottom: 1px solid #eaeaea;
+    justify-content: space-between;/* Centre le titre */
+  }
+  .features {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  
+  .features li {
+    display: flex;
+    justify-content: space-between; /* Cela place le texte à gauche et le span à droite */
+    margin-bottom: 25px; /* Espace entre les éléments de liste */
+    overflow-wrap: break-word;
+    color: #828282;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%; /* 14px */
+    letter-spacing: -0.41px;
+  }
+  .leftfeatures {
+    margin-left: 18vh;
+    color: #39A191;
+    text-align: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%; /* 14px */
+    letter-spacing: -0.41px;
+  }
+  .button {
+    width: 100%;
+    background-color: #3949A1;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 25px; /* Pousse le bouton vers le bas */
+  }
+
+  .footer{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .endboutton{
+    width: 129px;
+    height:48px;
+    border-radius: 8px;
+    border: 1px solid #EBEBEB;
+    background: #FFF;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.16);
+    margin: 40px 80px;
+  }
+  .endboutton:hover{
+    background-color: #3949A1;
+    color: white;
+  }

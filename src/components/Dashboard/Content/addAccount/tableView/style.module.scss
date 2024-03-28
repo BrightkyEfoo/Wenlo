@@ -1,0 +1,134 @@
+.container {
+  border-radius: 10px;
+  border: 1px solid #ebebeb;
+  background: #fff;
+  padding: 15px;
+  display: grid;
+  grid-template-columns: 1fr repeat(3, auto);
+  gap: 15px;
+  table {
+    grid-column: 1/-1;
+    margin: 16px 0 0;
+    border-collapse: collapse;
+    width: 100%;
+    th {
+      text-align: left;
+      color: #939393;
+      font-family: Inter;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 100%; /* 14px */
+      letter-spacing: -0.41px;
+      padding: 14px 0;
+    }
+    tr {
+      border-bottom: 1px solid #ebebeb;
+      border-color: #ebebeb;
+    }
+    tr:last-of-type {
+      border-bottom: none;
+    }
+    td {
+      padding: 18px 0;
+      color: #26283f;
+      font-family: Inter;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 100%; /* 12px */
+      img,
+      svg {
+        margin-right: 8px;
+      }
+      small {
+        color: #828282;
+        font-family: Inter;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 100%; /* 12px */
+      }
+      button {
+        color: #a78736;
+        font-family: Inter;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 100%; /* 12px */
+        display: flex;
+        height: 32px;
+        padding: 12px;
+        justify-content: center;
+        align-items: center;
+        gap: 14px;
+        border: none;
+        border-radius: 4px;
+        background: #fbf0db;
+      }
+    }
+  }
+}
+
+.container > :nth-child(2),
+.container > :nth-child(3) {
+  display: flex;
+  padding: 4px 8px;
+  align-items: center;
+  gap: 8px;
+  border-radius: 4px;
+  border: 1px solid #ebebeb;
+  color: #26283f;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 12px */
+  outline: none;
+  letter-spacing: -0.41px;
+  * {
+    outline: none;
+  }
+
+  & > button {
+    border: none;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.container > button {
+  display: flex;
+  padding: 7px 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 4px;
+  background: #3a4ca1;
+  color: #fff;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 12px */
+  border: none;
+}
+
+:has(div.editTitleParent) {
+  position: relative;
+}
+.editTitleParent {
+  display: grid;
+  grid-template-columns: 20px 1fr;
+  position: absolute;
+  border-radius: 4px;
+  border: 1px solid #ebebeb;
+  background: #fff;
+  box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.04);
+  width: 200px;
+  padding: 8px;
+  text-align: justify;
+  bottom: calc(100% - 15px);
+  right: 15px;
+}

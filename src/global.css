@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+body {
+  margin: 0;
+  line-height: normal;
+}
+* {
+  box-sizing: border-box;
+  /* color: #262626; */
+}
+
+button{
+  cursor: pointer;
+}
+
+.bold-title {
+  text-align: center;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 38.4px */
+  letter-spacing: -0.41px;
+}
+
+.simple-grayed-p {
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 19.6px */
+  letter-spacing: -0.41px;
+}
+
+/* font-sizes */
+.font-32 {
+  font-size: 32px;
+}
+
+.font-16 {
+  font-size: 16px;
+}
+
+.font-14 {
+  font-size: 14px;
+}
+
+.font-12 {
+  font-size: 12px;
+}
+
+/* font-weigth */
+.font-600 {
+  font-weight: 600;
+}
+
+.font-800 {
+  font-weight: 800;
+}
+
+.font-500 {
+  font-weight: 500;
+}
+
+.font-400 {
+  font-weight: 400;
+}
+
+/* font color */
+.color-black {
+  color: #26283f;
+}
+
+.color-gray {
+  color: #939393;
+}
+
+.color-blue {
+  color: #3949a1;
+}
+
+.color-red {
+  color: red;
+}
+
+.color-gray-2 {
+  color: #7f8283;
+}
+
+/* buttons */
+.btn-variant-1 {
+  display: flex;
+  padding: 9px 25px;
+  border: none;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: #3949a1;
+  color: #fff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 14px */
+  transition: all ease 300ms;
+  cursor: pointer;
+}
+
+.btn-variant-1:hover {
+  background: #26306b;
+}
+
+.btn-variant-2 {
+  display: flex;
+  width: 200px;
+  padding: 13px 14px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 8px;
+  background: #3949a1;
+  color: white;
+  border: none;
+  transition: all ease 300ms;
+  cursor: pointer;
+}
+
+.btn-variant-2:hover {
+  background: #2a3677;
+}
+
+.btn-variant-3 {
+  display: flex;
+  width: 200px;
+  padding: 13px 14px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  background: #fff;
+  border: none;
+  transition: all ease 300ms;
+  cursor: pointer;
+}
+
+.btn-variant-3:hover {
+  background: #d1d1d1;
+}
+
+/* text alignment */
+.text-center {
+  text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+/* cursor */
+.pointer {
+  cursor: pointer;
+}

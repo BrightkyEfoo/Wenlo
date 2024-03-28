@@ -1,0 +1,203 @@
+.container {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  z-index: 9999;
+
+  .containerChatbot {
+    background-color: white;
+    width: fit-content;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    display: grid;
+    gap: 10px;
+    width: 400px;
+    border-radius: 7px;
+    border-radius: 10px;
+    border: 1px solid #ebebeb;
+    background: #fff;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05);
+
+    .header {
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      gap: 30px;
+      align-items: center;
+      padding: 12px;
+      border-bottom: 1px solid #ebebeb;
+
+      & > :nth-child(1) {
+        position: relative;
+
+        & > :nth-child(1) {
+          border-radius: 20px;
+        }
+        & > :nth-child(2) {
+          position: absolute;
+          left: 20px;
+          border-radius: 20px;
+          padding: 1px;
+          background-color: white;
+        }
+      }
+
+      & > :nth-child(2) {
+        color: #26283f;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+      }
+
+      & > :nth-child(3) {
+        display: grid;
+        grid-template-columns: auto auto auto;
+
+        & > :nth-child(2) {
+          border: 1px solid #828282;
+          opacity: 0.5;
+        }
+        & > button {
+          display: grid;
+          place-items: center;
+          border: none;
+          background-color: white;
+        }
+      }
+    }
+
+    .body {
+      display: grid;
+      position: relative;
+      margin: 0;
+
+      & > :first-child {
+        display: grid;
+        grid-template-columns: auto auto;
+        border-radius: 6px;
+        border: 1px solid rgba(137, 144, 156, 0.2);
+        gap: 10px;
+        padding: 0px 12px;
+        position: absolute;
+        background: rgb(241, 241, 241);
+        color: #828282;
+        font-family: Inter;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        justify-self: center;
+        font-style: normal;
+        line-height: 100%; /* 12px */
+      }
+
+      & > :last-child {
+        display: grid;
+        height: 300px;
+        gap: 5px;
+        grid-template-columns: 1fr;
+
+        overflow-y: hidden;
+        overflow-y: auto;
+        padding: 15px;
+        &::-webkit-scrollbar {
+          width: 10px;
+          background-color: #f2f2f2;
+          border-radius: 10px;
+          overflow: hidden;
+        }
+        &::-webkit-scrollbar-thumb {
+          background: #e2e4e8;
+          border-radius: 8px;
+        }
+
+        .message {
+          border-radius: 12px 12px 12px 0px;
+          background: #f4f4f4;
+          display: flex;
+          padding: 10px 12px 10px 16px;
+          justify-self: start;
+        }
+        .messageSend {
+          display: flex;
+          padding: 10px 16px;
+          align-items: center;
+          justify-content: flex-start;
+          word-wrap: break-word;
+          word-break: break-all;
+          gap: 10px;
+          border-radius: 10px 10px 0px 10px;
+          background: #3a4ca1;
+          justify-self: end;
+          max-width: 300px;
+          color: white;
+          height: auto;
+          span {
+            width: 200px;
+          }
+        }
+      }
+    }
+
+    .footer {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      border-top: 1px solid #ebebeb;
+      padding: 12px;
+
+      & > :first-child {
+        border: 1px solid #ebebeb;
+        border-radius: 8px;
+        padding: 10px;
+        display: grid;
+        grid-template-columns: 1fr auto auto;
+        gap: 10px;
+
+        & > svg {
+          cursor: pointer;
+        }
+        & > :first-child {
+          border: none;
+          outline: none;
+        }
+      }
+
+      & > :last-child {
+        border-radius: 4px;
+        background: #3a4ca1;
+        color: #fff;
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 100%; /* 14px */
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        border-radius: 10px;
+        border: 1px solid #3a4ca1;
+      }
+    }
+  }
+
+  .button {
+    border-radius: 4px;
+    background: #3a4ca1;
+    color: #fff;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%; /* 14px */
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    border-radius: 30px;
+    border: 1px solid #3a4ca1;
+  }
+}

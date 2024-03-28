@@ -1,0 +1,258 @@
+.container {
+  border-radius: 10px;
+  border: 1px solid #ebebeb;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin: 20px;
+  height: calc(100vh - 160px);
+  overflow-y: scroll;
+}
+
+.subContainer {
+  max-width: 50%;
+  display: grid;
+  margin: 25px 0;
+  input,
+  select {
+    border-radius: 8px;
+    border: 1px solid #ebebeb;
+    padding: 13px 14px;
+    background: #fff;
+    margin: 8px 0;
+    color: black;
+  }
+  input::placeholder {
+    color:  #26283F;;
+  }
+  & > :nth-child(1) {
+    justify-self: center;
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #f2f2f2;
+    background: #fafafa;
+    * {
+      color: #3c5a9a;
+    }
+  }
+  h2 {
+    color: #26283f;
+    text-align: center;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 24px */
+    letter-spacing: -0.41px;
+  }
+
+  h3 {
+    color: #26283f;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%; /* 18px */
+    letter-spacing: -0.41px;
+    margin: 50px 0 6px;
+  }
+
+  * {
+    outline: none;
+  }
+  h3 + span {
+    margin: 6px 0 28px;
+  }
+  label,
+  span {
+    color: #939393;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%; /* 14px */
+    letter-spacing: -0.41px;
+  }
+
+  .bottomButtonsContainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    gap: 16px;
+    button {
+      border: none;
+      padding: 8px 15px;
+    }
+    button:first-of-type {
+      border-radius: 8px;
+      border: 1px solid #e0e0e0;
+      background: #fff;
+      color: #26283f;
+      font-family: Inter;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 100%; /* 14px */
+    }
+    button:last-of-type {
+      border-radius: 8px;
+      background: #3949a1;
+      color: #fff;
+      font-family: Inter;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 100%; /* 14px */
+    }
+  }
+}
+
+.CustomLabelWrapperLabel {
+  position: relative;
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  gap: 5px;
+
+  .infoCircle + div {
+    display: none;
+  }
+
+  .infoCircle:hover + div {
+    display: block;
+  }
+
+  .infosContainer {
+    position: absolute;
+    left: calc(100% + 20px);
+    top: 10px;
+    padding: 4px 10px;
+    border-radius: 4px;
+    border: 1px solid #ebebeb;
+    background: #fff;
+    box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.06);
+    color: #939393;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 16.8px */
+    z-index: 101;
+    width: max-content;
+    max-width: 300px;
+  }
+
+  .infoCircle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    path {
+      color: #8c8c8c;
+    }
+  }
+}
+
+.stepperIndex1 {
+  margin-bottom: 40px;
+  p {
+    color: #939393;
+    font-family: Inter;
+    font-size: 0.9em;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: -0.41px;
+    margin: 0;
+    padding: 5px 0;
+  }
+
+  & > div {
+    display: grid;
+    border-radius: 10px;
+    border: 1px solid #ebebeb;
+    opacity: 0.9;
+    padding: 16px;
+    gap: 16px;
+
+    & > div {
+      display: grid;
+    }
+
+    button {
+      border-radius: 8px;
+      border: 1px solid #3949a1;
+      background: #fff;
+      width: fit-content;
+      padding: 8px 12px;
+      color: #3949a1;
+      font-family: Inter;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 100%; /* 14px */
+    }
+  }
+}
+
+.stepperIndex2 {
+  display: grid;
+  margin-bottom: 40px;
+
+  & > div {
+    display: grid;
+    border-radius: 10px;
+    border: 1px solid #ebebeb;
+    opacity: 0.9;
+    padding: 16px;
+    gap: 16px;
+
+    & > button {
+      border-radius: 8px;
+      border: 1px solid #3949a1;
+      background: #fff;
+      width: fit-content;
+      padding: 8px 12px;
+      color: #3949a1;
+      font-family: Inter;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 100%; /* 14px */
+    }
+
+    & > div {
+      display: grid;
+    }
+  }
+}
+
+.stepperIndex3 {
+  .proofContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 8px;
+    border: 1px solid #ebebeb;
+    background: #fff;
+    margin: 14px 0;
+    padding: 25px;
+  }
+
+  p,
+  li {
+    color: #939393;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 19.6px */
+    letter-spacing: -0.41px;
+  }
+}

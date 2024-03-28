@@ -1,0 +1,336 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  padding: 18px 20px;
+  column-gap: 15px;
+  row-gap: 20px;
+  align-items: center;
+
+  & > button {
+    border-radius: 4px;
+    background: #3a4ca1;
+    color: #fff;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%; /* 14px */
+    border: none;
+    padding: 12px 20px;
+  }
+  & > button.cancelButton {
+    color: #26283f;
+    border-radius: 4px;
+    border: 1px solid #e0e0e0;
+    background-color: transparent;
+  }
+  p {
+    margin: 0;
+  }
+  h2 {
+    color: #132239;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%; /* 24px */
+    letter-spacing: -0.41px;
+  }
+}
+
+.infosContainer {
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  border-radius: 10px;
+  border: 1px solid #ebebeb;
+  background: #fff;
+  & > span {
+    color: #939393;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%; /* 14px */
+    letter-spacing: -0.41px;
+  }
+  & > p {
+    color: #26283f;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%; /* 14px */
+    letter-spacing: -0.41px;
+  }
+  & > :first-child {
+    grid-column: 1/-1;
+    color: #26283f;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%; /* 16px */
+  }
+  & > * {
+    border-bottom: 1px solid #ebebeb;
+    padding: 12px 20px;
+  }
+  & > :last-child {
+    border-bottom: none;
+  }
+}
+
+.editContainer {
+  grid-column: 1/ -1;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  align-items: start;
+  gap: 20px;
+}
+
+.editContainer > :nth-child(2) {
+  border-radius: 10px;
+  border: 1px solid #ebebeb;
+  background: #fff;
+
+  & > :first-child {
+    color: #26283f;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%; /* 16px */
+    padding: 15px;
+    border-bottom: 1px solid #ebebeb;
+  }
+  & > :nth-child(2) {
+    position: relative;
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    margin: 25px auto;
+    // background-color: green;
+    img {
+      height: 140px;
+      width: 140px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+    button {
+      border-radius: 50%;
+      border: 2px solid white;
+      position: absolute;
+      border-radius: 100px;
+      border: 4.5px solid #fff;
+      background: #3a4ca1;
+      height: 40px;
+      width: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      bottom: 0;
+      right: 0;
+    }
+  }
+  & > div:last-child {
+    display: grid;
+    padding: 5px 15px 15px;
+    gap: 8px;
+    label {
+      color: #939393;
+      font-family: Inter;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 100%; /* 14px */
+      letter-spacing: -0.41px;
+    }
+    input {
+      border-radius: 8px;
+      border: 1px solid #ebebeb;
+      background: #fff;
+      height: 35px;
+      padding-left: 10px;
+    }
+  }
+}
+
+.editContainer > :first-child {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  row-gap: 12px;
+  border-radius: 10px;
+  border: 1px solid #ebebeb;
+  background: #fff;
+  padding-bottom: 15px;
+
+  & > :first-child {
+    color: #26283f;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%; /* 16px */
+    padding: 15px;
+    border-bottom: 1px solid #ebebeb;
+  }
+
+  input,
+  select {
+    border-radius: 8px;
+    border: 1px solid #ebebeb;
+    background: #fff;
+    height: 35px;
+    padding-left: 10px;
+    outline: none;
+  }
+
+  span {
+    color: #939393;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%; /* 14px */
+    letter-spacing: -0.41px;
+  }
+
+  & > :first-child {
+    grid-column: 1/-1;
+  }
+
+  & > div {
+    display: grid;
+    gap: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .small {
+    grid-column: span 2;
+  }
+
+  .big {
+    grid-column: 1/-1;
+  }
+
+  .medium {
+    grid-column: span 3;
+  }
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #0000002d;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popupContainer {
+  width: 420px;
+  border-radius: 10px;
+  border: 1px solid #ebebeb;
+  background: #fff;
+  & > * {
+    padding: 0 15px;
+  }
+}
+
+.popupHeader {
+  border-bottom: 1px solid #ebebeb;
+  display: grid;
+  gap: 10px;
+  padding: 15px 15px;
+  p {
+    color: #2d3036;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 100%; /* 16px */
+    letter-spacing: -0.41px;
+  }
+  span {
+    color: #939393;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 19.6px */
+    letter-spacing: -0.41px;
+  }
+}
+
+.popupBody {
+  label {
+    color: #939393;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%; /* 14px */
+    letter-spacing: -0.41px;
+  }
+
+  display: grid;
+  gap: 8px;
+  padding: 15px;
+  div {
+    border-radius: 8px;
+    border: 1px solid #ebebeb;
+    background: #fff;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    input {
+      padding-left: 10px;
+      border: none;
+      outline: none;
+      border: none;
+      height: 35px;
+    }
+    button {
+      width: 35px;
+      height: 35px;
+      display: grid;
+      place-items: center;
+      border: none;
+      background-color: transparent;
+    }
+  }
+}
+
+.popupFooter {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: flex-end;
+  gap: 15px;
+  padding: 15px;
+  button {
+    border-radius: 4px;
+    background: #3a4ca1;
+    color: #fff;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%; /* 14px */
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    border: 1px solid #3a4ca1;
+  }
+}
+.containerButton{
+  grid-column: 1/-1;
+
+}
+

@@ -1,0 +1,27 @@
+{
+  "account_type": "zdbdgbn",
+  "accout_number": "55555",
+  "amount": 500,
+  "bank_address": "zdvsbfs",
+  "bank_name": "szvsbsf",
+  "beneficiary_name": "fbdgbdf",
+  "email": "bethu@gmail.com",
+  "pay_method": 4,
+  "routin": "zvdbgdn",
+  "type": "withdrawal",
+  "user": 2
+}
+
+{
+    "user": 2,
+    "type": "withdrawal",
+    "pay_method": 4,
+    "amount": 20,
+    "email": "bethu@gmail.com",
+    "bank_name": "Bank",
+    "bank_address": "dsfsd",
+    "routin": "routin",
+    "account_number": "15563",
+    "account_type": "type",
+    "beneficiary_name": "Bethuel"
+}

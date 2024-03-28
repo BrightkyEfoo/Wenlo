@@ -1,0 +1,119 @@
+/* TODO: Implement style of the question last form, that form whit lot of radios button */
+
+.formContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin: 96px 10px 35px;
+  min-width: 500px;
+}
+
+.buttonsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.stepperContainer {
+  width: 450px;
+}
+
+.container {
+  margin: 48px;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.subContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .left {
+    position: relative;
+    align-self: flex-end;
+    top: -25px;
+    right: 10px;
+  }
+}
+
+.formContainer2 {
+  padding: 45px 0 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.formContainer2 label {
+  color: #939393;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: -0.41px;
+  padding-top: 5px;
+  outline: none;
+}
+
+.formContainer2 select {
+  padding: 13px 14px;
+  gap: 8px;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #ebebeb;
+  background: #fff;
+}
+
+.formContainer2 > div:nth-child(2) {
+  gap: 10px;
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(27%, 1fr));
+}
+
+.formContainer2 > div:nth-child(4) {
+  align-items: center;
+  flex-wrap: wrap;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(48%, 1fr));
+}
+
+.formContainer2 .stepperRadioButton {
+  display: flex;
+  padding: 13px 14px;
+  align-items: center;
+  gap: 8px;
+  border-radius: 8px;
+  border: 1px solid #ebebeb;
+  background: #fff;
+  cursor: pointer;
+  & > label {
+    cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .container {
+    width: fit-content;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .formContainer {
+    min-width: 65vw;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .stepperContainer {
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .buttonsContainer {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

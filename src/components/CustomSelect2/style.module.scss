@@ -1,0 +1,47 @@
+.container {
+  position: relative;
+  user-select: none;
+}
+
+.head {
+  border-radius: 8px;
+  border: 1px solid #ebebeb;
+  background: #fff;
+  height: 30px;
+  padding-left: 12px;
+  display: grid;
+  align-items: center;
+  cursor: pointer;
+  grid-template-columns: 1fr auto;
+  button {
+    border: none;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: transparent;
+  }
+}
+
+.bottom {
+  z-index: 100;
+  overflow: hidden;
+  position: absolute;
+  top: 40px;
+  border-radius: 8px;
+  border: 1px solid #ebebeb;
+  background: #ebebeb;
+  width: 100%;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.06);
+  & > div {
+    display: flex;
+    padding: 5px 14px;
+    align-items: center;
+    gap: 8px;
+    background: #fff;
+    cursor: pointer;
+  }
+  .headerOption {
+    cursor: default;
+    background: #f7f7f7;
+  }
+}

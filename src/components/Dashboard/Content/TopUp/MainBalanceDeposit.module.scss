@@ -1,0 +1,313 @@
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(28, 28, 28, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  p {
+    margin: 0;
+    color: #26283f;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 24px */
+  }
+  span {
+    color: #939393;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%; /* 14px */
+  }
+  .dateContainer {
+    color: #939393;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%; /* 14px */
+    letter-spacing: -0.41px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+}
+
+.closeButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background: white;
+}
+
+.container::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.container::-webkit-scrollbar-thumb {
+  width: 10px;
+  border-radius: 8px;
+  background-color: #939393a1;
+}
+
+.container {
+  display: grid;
+  max-height: 75vh;
+  border-radius: 8px;
+  background-color: white;
+  width: 480px;
+  // padding: 20px 0;
+  overflow-y: scroll;
+  position: relative;
+  & > * {
+    padding: 0 18px;
+  }
+
+  & > :nth-child(2) {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    position: relative;
+    padding: 14px 20px 20px 20px;
+    gap: 10px;
+
+    & > button:last-of-type {
+      border-radius: 8px;
+      background: #3949a1;
+      justify-self: end;
+      border: none;
+      color: #fff;
+      font-family: Inter;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 100%; /* 14px */
+      padding: 7px 18px;
+    }
+    & > :nth-child(2) {
+      display: grid;
+      grid-template-columns: 1fr auto;
+
+      & > :nth-child(1) {
+        color: #3949a1;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 100%; /* 16px */
+      }
+      & > :nth-child(2) {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+
+        .checkedButton {
+          border: none;
+          border-radius: 10px;
+          background-color: #3949a1;
+          height: fit-content;
+          width: fit-content;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 2px;
+        }
+        .isNotChecked {
+          background: #eceef6;
+
+          & > :nth-child(2) {
+            circle {
+              fill: #eceef6;
+            }
+          }
+        }
+      }
+    }
+
+    & > :nth-child(3) {
+      width: fit-content;
+      display: flex;
+      padding: 4px 5px;
+      justify-content: center;
+      align-items: center;
+      gap: 3px;
+      border-radius: 3px;
+      border: 0.5px solid #d23d28;
+      background: #fdebed;
+      color: #d23d28;
+    }
+    & > :nth-child(4) {
+      border-radius: 8px;
+      border: 1px solid #ebebeb;
+      background: #fff;
+      outline: none;
+      resize: none;
+      height: 100px;
+      padding: 10px;
+      overflow-y: auto;
+
+      &::-webkit-scrollbar {
+        width: 5px;
+        border-radius: 8px;
+        overflow: hidden;
+      }
+      &::-webkit-scrollbar-thumb {
+        width: 10px;
+        border-radius: 8px;
+        background-color: #939393a1;
+      }
+
+      &::placeholder {
+        color: #26283f;
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 100%; /* 14px */
+        letter-spacing: -0.41px;
+      }
+    }
+  }
+}
+
+.head {
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 100;
+  padding: 20px 18px 0;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+}
+
+.footer {
+  position: sticky;
+  bottom: -1px;
+  padding: 18px 18px 20px;
+  background-color: #fff;
+  display: grid;
+}
+
+.submitButton {
+  border-radius: 4px;
+  background: #3a4ca1;
+  color: #fff;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 12px */
+  padding: 8px;
+  border: none;
+}
+
+.container > :nth-child(3) {
+  border-bottom: 1px solid #ebebeb;
+  border-top: 1px solid #ebebeb;
+  display: grid;
+  gap: 9px;
+  padding: 20px 18px;
+  p {
+  }
+  span {
+    color: #939393;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%; /* 14px */
+  }
+  & > div:first-of-type {
+    p {
+      color: #26283f;
+      font-family: Inter;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 100%; /* 14px */
+    }
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 8px;
+    margin-top: 5px;
+  }
+}
+
+.checkingStatusDisplayElement {
+  padding: 8px 0;
+}
+
+.checkingStatusRenderElement {
+  padding: 4px 12px 12px;
+  background: #fff;
+  border-bottom: 1px solid #ebebeb;
+}
+
+// div.checkingStatusRenderElement:first-of-type {
+//   padding-top: 12px;
+// }
+
+.container > div:nth-child(4) {
+  padding: 18px;
+  span {
+    color: #939393;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%; /* 14px */
+    letter-spacing: -0.41px;
+  }
+
+  & > div {
+    p {
+      color: #26283f;
+      font-family: Inter;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 100%; /* 14px */
+    }
+    gap: 8px;
+    padding-top: 12px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.proofButton {
+  border-radius: 3px;
+  background: #fff;
+  box-shadow: 0px 0px 0px 1px #ebebeb, 0px 1px 1px 1px rgba(38, 40, 63, 0.06);
+  padding: 6px 11px;
+  justify-self: start;
+  border: none;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 6px;
+  span {
+    color: #26283f !important;
+    font-family: Inter;
+    font-size: 12px !important;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%; /* 12px */
+  }
+}
+
+.detailsView {
+  border-radius: 10px;
+  border: 1px solid #ebebeb;
+  padding: 12px;
+}
